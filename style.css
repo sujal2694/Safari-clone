@@ -311,3 +311,40 @@ body{
     top: -11px;
     left: 50px;
 }
+
+.contact-section .btn{
+    margin: 20px 0px;
+}
+
+.btn button{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 3px 20px;
+    background-color: #e6b328;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-family: "Winky Rough",  sans-serif;
+    border: none;
+}
+
+.btn button:hover{
+    border-radius: 8px;
+}
+
+.hover{
+    background-color: #9e802c;
+    color: #b9b9b8;
+}
+
+/*footer section start here*/
+
+.footer{
+    background-color: #232323;
+    color: whitesmoke;
+    font-size: 10px;
+    font-weight: 200;
+    font-family: "Winky Rough", sans-serif;
+    text-align: center;
+    padding: 10px 0px;
+    letter-spacing: 1px;
+}
