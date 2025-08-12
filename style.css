@@ -250,3 +250,64 @@ body{
 .product .cart-btn button i{
     color: #cfa42d;
 }
+
+
+/*contact section start here*/
+
+#contact{
+    margin-top: 40px;
+    width: 100%;
+    background-color: rgb(62, 62, 62);
+}
+
+#contact .contact-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.contact-section h1{
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Acme", sans-serif;
+    margin: 20px 0px;
+}
+
+.contact-section .contact-input{
+    margin: 10px 0px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.contact-input input{
+    width: 80%;
+    height: 30px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 23px;
+    background-color: rgb(62, 62, 62);
+}
+
+.contact-input p{
+    position: absolute;
+    top: 5px;
+    left: 60px;
+    color: ghostwhite;
+    background-color: rgb(62, 62, 62);
+    text-transform: uppercase;
+    font-family: "Winky Rough", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    padding: 0px 5px;
+    transition: 0.5s;
+}
+
+.contact-input:hover p{
+    top: -11px;
+    left: 50px;
+}
