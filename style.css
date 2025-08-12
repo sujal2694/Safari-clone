@@ -167,6 +167,7 @@ body{
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(20px);
     margin: 10px 10px;
+    position: relative;
     color: ghostwhite;
     transition: 5ms;
 }
@@ -224,4 +225,28 @@ body{
     font-weight: 500;
     letter-spacing: 2px;
     margin: 2px 5px;
+}
+
+.product .cart-btn{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #e3e1dc;
+    padding: 8px;
+    border: none;
+    border-radius: 50%;
+}
+
+.cart-btn:hover{
+    background-color: #a8a7a3;
+    color: #9e802c;
+}
+
+.product .cart-btn button{
+    background-color: transparent;
+    border:  none;
+}
+
+.product .cart-btn button i{
+    color: #cfa42d;
 }
