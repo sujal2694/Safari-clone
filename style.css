@@ -30,6 +30,7 @@ body{
     display: flex;
     align-items: center;
     color: whitesmoke;
+    margin: 0px 10px;
 }
 
 .logo h1{
@@ -135,3 +136,92 @@ body{
 }
 
 /*product section start here*/
+
+#product{
+    margin-top: 50px;
+    padding: 0px 20px;
+}
+
+#product .head{
+    text-align: center;
+    color: ghostwhite;
+    margin: 20px 0px;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Acme", sans-serif;
+}
+
+#product .products-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.products-list .product{
+    width: 25%;
+    padding: 5px 5px;
+    border: 1px solid rgba(11, 11, 11, 0.923);
+    border-radius: 10px;
+    background-color: rgba(71, 69, 69, 0.88);
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(20px);
+    margin: 10px 10px;
+    color: ghostwhite;
+    transition: 5ms;
+}
+
+.products-list .product:hover{
+    scale: 1.03;
+}
+
+.product img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product .product-details{
+    padding: 5px 3px;
+}
+
+.product .product-details p{
+    font-size: 12px;
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+}
+
+.product .product-details h1{
+    font-size: 20px;
+    font-family: "Acme", sans-serif;
+    font-weight: 100;
+}
+
+.product .product-details .ratings{
+    display: flex;
+    align-items: center;
+}
+
+.product .product-details .ratings span{
+    font-size: 12px;
+    font-weight: 200;
+    margin-right: 5px;
+}
+
+.product .product-details .ratings i{
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: rgb(105, 104, 104);
+}
+
+.product .product-details .ratings i.checked{
+    color: rgb(218, 217, 217);
+}
+
+.product .product-details h2{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin: 2px 5px;
+}
