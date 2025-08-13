@@ -64,6 +64,7 @@ body{
 }
 
 .navbar ul li{
+    color: whitesmoke;
     margin: 0px 10px;
     list-style: none;
     position: relative;
@@ -397,11 +398,15 @@ body{
 
 #cart{
     position: fixed;
-    top: 40px;
+    top: 45px;
     left: 0;
     background-color: #3b3a3a9d;
     backdrop-filter: blur(20px);
     height: 100%;
+}
+
+.cart-open{
+    display: block;
 }
 
 .cart-container{
