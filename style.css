@@ -403,6 +403,7 @@ body{
     background-color: #3b3a3a9d;
     backdrop-filter: blur(20px);
     height: 100%;
+    display: none;
 }
 
 .cart-open{
