@@ -393,6 +393,116 @@ body{
     background-color: rgba(243, 10, 10, 0.974);
 }
 
+/*cart section start here*/
+
+#cart{
+    position: fixed;
+    top: 40px;
+    left: 0;
+    background-color: #3b3a3a9d;
+    backdrop-filter: blur(20px);
+    height: 100%;
+}
+
+.cart-container{
+    position: relative;
+}
+
+.cart-container .close-icon{
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    background-color: rgba(226, 227, 227, 0.686);
+    backdrop-filter: blur(10px);
+    padding: 5px 5px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-container .cart-content{
+    margin-top: 40px;
+    padding: 0px 10px;
+}
+
+.cart-content .head{
+    text-align: center;
+    color: whitesmoke;
+    padding: 10px 0px;
+    font-size: 24px;
+}
+
+.cart-content .head h1{
+    font-family: "Winky Rough", sans-serif;
+    letter-spacing: 1.02px;
+}
+
+.cart-box .product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: ghostwhite;
+    padding: 10px;
+    border: 0.5px solid ghostwhite;
+}
+
+.cart-box .product img{
+    width: 60px;
+    height: 90px;
+}
+
+.cart-box .product .product-details{
+    padding: 0px 10px;
+}
+
+.cart-box .product .product-details p{
+    color: rgba(237, 236, 236, 0.984);
+}
+
+.cart-box .product .product-details h1{
+    font-size: 14px;
+}
+
+.cart-box .product .product-details h2{
+    font-size: 13px;
+    letter-spacing: 0;
+}
+
+.cart-box .total-price{
+    text-align: right;
+    color: whitesmoke;
+    padding: 8px 0px 0px 0px;
+    margin-top: 5px;
+    border-top: 1px solid white;
+}
+
+.cart-box .buybtn{
+    text-align: center;
+    margin: 5px 0px;
+}
+
+.cart-box .buybtn button{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #232323;
+    background-color: #a8a7a3;
+    font-family: "Winky Rough", sans-serif;
+    font-weight: 400;
+    transition: 0.4s ease-in;
+}
+
+.cart-box .buybtn button:hover{
+    border-radius: 10px;
+    background-color: #ddddda;
+    scale: 1.05;
+    box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.4);
+}
+
 /*footer section start here*/
 
 .footer{
@@ -460,6 +570,11 @@ body{
 
 .products-list .product{
     width: 90%;
+}
+
+.product .cart-btn{
+    bottom: 10px;
+    right: 10px;
 }
 
 /*contact section start here*/
