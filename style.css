@@ -449,6 +449,7 @@ body{
     color: ghostwhite;
     padding: 10px;
     border: 0.5px solid ghostwhite;
+    margin: 5px 0px;
 }
 
 .cart-box .product img{
@@ -473,7 +474,7 @@ body{
     letter-spacing: 0;
 }
 
-.cart-box .total-price{
+.total-price{
     text-align: right;
     color: whitesmoke;
     padding: 8px 0px 0px 0px;
@@ -481,12 +482,12 @@ body{
     border-top: 1px solid white;
 }
 
-.cart-box .buybtn{
+.buybtn{
     text-align: center;
     margin: 5px 0px;
 }
 
-.cart-box .buybtn button{
+.buybtn button{
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
@@ -498,7 +499,7 @@ body{
     transition: 0.4s ease-in;
 }
 
-.cart-box .buybtn button:hover{
+.buybtn button:hover{
     border-radius: 10px;
     background-color: #ddddda;
     scale: 1.05;
