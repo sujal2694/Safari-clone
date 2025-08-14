@@ -19,6 +19,7 @@ addTocartBtns.forEach(button => {
    button.addEventListener('click', (e) => {
       let productBox = e.target.closest('.product');
       addTocart(productBox);
+      updatePrice();
    });;
 });
 
@@ -45,8 +46,20 @@ let addTocart = (productBox) =>{
    `
 
    cartContent.appendChild(cartBox);
-   document.querySelector('.remove-btn').onclick = () => {
-      cartContent.remove(cartBox)
-   }
+   updatePrice();
 }
 
+
+let updatePrice = () => {
+
+   let cartContent = document.querySelector('.cart-box');
+   let totalPrice = document.querySelector('#total');
+   let boxes = cartContent.querySelectorAll('.product');
+   let total = 0;
+   boxes.forEach(box => {
+      let priceElement = box.querySelector('h2');
+      let price = priceElement.textContent.replace('₹', '');
+      total += price ;
+   });
+   totalPrice.textContent = `₹${total}`;
+}
