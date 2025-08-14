@@ -1,9 +1,9 @@
 const cartSlide = document.getElementById("cart");
 const cartBtn = document.getElementById("cart-btn");
 
-cartBtn.addEventListener('click', (e) => {
+cartBtn.onclick = () => {
    cartSlide.style.left = '0';
-});
+}
 
 const closeBtn = document.getElementById("close-btn");
 
