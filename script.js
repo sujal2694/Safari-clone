@@ -31,13 +31,21 @@ let addTocart = (productBox) =>{
    let ProductPrice = productBox.querySelector('h2').textContent;
 
    let cartContent = document.querySelector('.cart-box');
+   let cartItems = cartContent.querySelectorAll('#name');
+   for(let item of cartItems){
+      if(item.textContent === productName){
+         alert('This item is already in cart!');
+         return;
+      }
+   }
+
    let cartBox = document.createElement('div');
    cartBox.classList.add('product');
    cartBox.innerHTML = `
             <a href="#"><img src="${productImg}" alt=""></a>
             <div class="product-details">
                 <p>Safari</p>
-                <h1>${productName}</h1>
+                <h1 id="name">${productName}</h1>
                 <h2>${ProductPrice}</h2>
             </div>
             <div class="remove-btn">
@@ -46,7 +54,10 @@ let addTocart = (productBox) =>{
    `
 
    cartContent.appendChild(cartBox);
-   updatePrice();
+   cartBox.querySelector('.remove-btn').addEventListener('click', (e) => {
+      cartBox.remove();
+      updatePrice();
+   })
 }
 
 
@@ -57,9 +68,9 @@ let updatePrice = () => {
    let boxes = cartContent.querySelectorAll('.product');
    let total = 0;
    boxes.forEach(box => {
-      let priceElement = box.querySelector('h2').textContent;
+      let priceElement = box.querySelector('h2').innerText;
       let price = priceElement.replace('₹','');
-      total = price + price;
+      total += Number(price);
    })
    totalPrice.textContent = `₹${total}`;
 }
