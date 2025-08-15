@@ -57,9 +57,9 @@ let updatePrice = () => {
    let boxes = cartContent.querySelectorAll('.product');
    let total = 0;
    boxes.forEach(box => {
-      let priceElement = box.querySelector('h2');
-      let price = priceElement.textContent.replace('₹', '');
-      total += price ;
-   });
+      let priceElement = box.querySelector('h2').textContent;
+      let price = priceElement.replace('₹','');
+      total = price + price;
+   })
    totalPrice.textContent = `₹${total}`;
 }
